@@ -86,8 +86,8 @@ function slideToggle(e){
 // button 
 // =============================================================================================
 
-var button = document.getElementsByClassName("first-btn")[0];
-button.addEventListener("click", function mybtn() {
-  window.location.href="/about.html";
-})
+// var button = document.getElementsByClassName("first-btn")[0];
+// button.addEventListener("click", function mybtn() {
+//   window.location.href="/about.html";
+// })
 

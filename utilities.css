@@ -49,6 +49,7 @@
 
 .bt{
   padding-left: 1rem;
+  margin-top: 2rem;
 }
 
 h5{
@@ -68,7 +69,6 @@ h5{
   color: transparent;
   border-bottom: 3px solid #FFCC00;
   box-shadow: 0 10px 6px -6px #777;
-  width: 22%;
   text-align: center;
   padding-bottom: 1.25rem;
   margin: auto;
