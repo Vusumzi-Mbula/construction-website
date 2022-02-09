@@ -37,21 +37,24 @@
   }
 
   .hero-section{
-    padding-top: 10rem;
+    margin-top: 8rem;
     color: #1e1f209f;
-    display: flex;
-    justify-content: start;
+    /* display: flex;
+    justify-content: start; */
 }
 
   .landing-content{
-    margin: auto;
-    width: 80%;
-    box-sizing: border-box;
+    align-self: center;
+    height: 35vh;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 9rem;
   }
 
-  .layer{
+  .ing-div {
+    text-align: center;
+    justify-self: center;
+  }
+
+  /* .layer{
     font-size: 1.5rem;
     color: black;
     font-family: sans-serif;
@@ -60,23 +63,25 @@
 
   .layer h1{
     padding-left: 2rem;
-  }
+  } */
   
   .second-layer{
-    padding-top: 2rem;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+    height: 50vh;
     color: #1e1f209f;
   }
 
   .txt-rotate{
     color: #f71143;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     font-weight: bolder;
 }
   
   .first-btn{
     background-color: #f71143;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ffffff;
     padding: 1rem;
     border: none;
@@ -102,13 +107,13 @@
   }
 
   .bt{
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     margin-top: 2rem;
   }
 
   img{
     width: 100%;
-    display: block;
+    /* display: block; */
   }
 
 .animation{
@@ -124,19 +129,31 @@
 
 @keyframes vusi{
   0%{left: -10px;}
-  100%{left: 15%}   
+  100%{left: 0%}   
 }
 
 @media(min-width: 40rem){
+  .second-layer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    height: 50vh;
+    color: #1e1f209f;
+  }
 
+  .landing-content{
+    align-self: center;
+    height: 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 } 
 
 .bt{
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
 }
 
 .footer{
-  background-color:#3b3e419f;
+  background-color:#EEEEEE;
   color: white;
   font-size: 1.5rem;
   width: 100%;
