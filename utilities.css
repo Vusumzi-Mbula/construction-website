@@ -273,12 +273,6 @@ img {
     -o-transition: all 0.2s linear;
 }
 
-.footer {
-    font-size: 1.5rem;
-    width: 100%;
-    height: 25vh;
-}
-
 
 /* footer section */
 
@@ -303,16 +297,22 @@ img {
 
 .socialContainer h2 {
     text-align: center;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .Fcontainer li {
     list-style: none;
+    padding-bottom: 10px;
+}
+
+.header li {
+    border-bottom: black solid 1px;
 }
 
 .Fcontainer a {
     text-decoration: none;
     color: black;
+    font-size: 1em;
 }
 
 .socialContainer a {
@@ -328,10 +328,15 @@ img {
 .list a {
     text-decoration: none;
     color: black;
+    font-size: 1em;
 }
 
 .list a:hover {
     color: tomato;
+}
+
+.header a:hover {
+    color: #816f53;
 }
 
 @media screen and (max-width: 600px) {
