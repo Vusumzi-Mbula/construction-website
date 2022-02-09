@@ -393,3 +393,7 @@ img {
 .fa:hover {
     background-color: rgb(107, 107, 180);
 }
+
+.larger {
+  font-size: larger;
+}
