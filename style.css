@@ -21,7 +21,7 @@
     align-items: center;
     padding-right: 1rem;
     position: fixed;
-    z-index: 5;
+    z-index: 1000;
 }
 
 .topnav a:hover {
@@ -45,13 +45,17 @@
 
 .landing-content {
     align-self: center;
-    height: 35vh;
+    height: 45vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.ing-div {
+.image-div {
     text-align: center;
     justify-self: center;
+}
+
+.image-div img {
+    width: 70%;
 }
 
 
@@ -113,7 +117,7 @@
 }
 
 img {
-    width: 70%;
+    width: 100%;
     /* display: block; */
 }
 
@@ -132,7 +136,7 @@ img {
         left: -10px;
     }
     100% {
-        left: 20%;
+        left: 15%;
     }
 }
 
@@ -148,6 +152,15 @@ img {
         align-self: center;
         height: 50vh;
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    @keyframes vusi {
+        0% {
+            left: -10px;
+        }
+        100% {
+            left: 20%;
+        }
     }
 }
 
