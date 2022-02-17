@@ -2,3 +2,121 @@
     margin: auto;
     width: 80%;
 }
+
+
+/* message box */
+
+.message-box {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* border-radius: 20% 20% 0 0; */
+    visibility: hidden;
+}
+
+.newlook {
+    background-color: rgb(248, 207, 76);
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    /* border-radius: 25% 25% 0 0; */
+}
+
+.greeting {
+    position: relative;
+    top: -20px;
+    width: 250px;
+    height: 40px;
+    margin: auto;
+    background-color: rgb(182, 161, 92);
+}
+
+.check-box {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.fa-message {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(248, 207, 76);
+    color: black;
+    border-radius: 50%;
+    font-size: 2em;
+}
+
+.main.checked i {
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+#textarea {
+    margin-bottom: 10px;
+}
+
+.main {
+    position: fixed;
+    bottom: 10%;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 15px;
+    width: 100px;
+    margin: auto;
+}
+
+.btnContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.text,
+textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+}
+
+.newlook .cross {
+    transform: rotate(45deg);
+    position: relative;
+    left: 300px;
+    bottom: 15px;
+    color: gray;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.cross:hover {
+    color: red;
+}
+
+.message-box a {
+    color: burlywood;
+    text-decoration: none;
+}
+
+.message-box span {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 458px) {
+    .main {
+        right: 1px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main {
+        bottom: 2px;
+    }
+}
