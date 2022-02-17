@@ -137,3 +137,13 @@ textarea {
         bottom: 2px;
     }
 }
+
+@media (max-height: 602px) {
+    .main {
+        bottom: 1px;
+    }
+    .text,
+    textarea {
+        padding: 0;
+    }
+}
