@@ -91,3 +91,48 @@ function slideToggle(e){
 //   window.location.href="/about.html";
 // })
 
+// ==============================================================================================
+// carousel
+// ==============================================================================================
+
+let thumbnail = document.getElementsByClassName("thumbnail");
+let slider = document.getElementById("slider");
+let buttonRight = document.getElementById("slide-right");
+let buttonLeft = document.getElementById("slide-left");
+
+buttonLeft.addEventListener("click", () => {
+    slider.scrollLeft -= 125;
+})
+
+buttonRight.addEventListener("click", () =>{
+    slider.scrollLeft += 125;
+})
+
+const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+//AUTO PLAY THE SLIDER 
+function autoPlay() {
+    if (slider.scrollLeft > (maxScrollLeft - 1)) {
+        slider.scrollLeft -= maxScrollLeft;
+    } else {
+        slider.scrollLeft += 1;
+    }
+}
+let play = setInterval(autoPlay, 50);
+
+// PAUSE THE SLIDE ON HOVER
+for (var i=0; i < thumbnail.length; i++){
+
+thumbnail[i].addEventListener('mouseover', function() {
+    clearInterval(play);
+});
+
+thumbnail[i].addEventListener('mouseout', function() {
+    return play = setInterval(autoPlay, 50);
+});
+}
+
+ // toggle navbar when toggle button is clicked
+ document.querySelectorAll('.navbar-toggler').addEventListener('click', () => {
+    document.querySelectorAll('.navbar-collapse').classList.toggle('.show-navbar');
+});
