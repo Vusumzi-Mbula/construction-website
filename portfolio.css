@@ -231,6 +231,10 @@ section .thumbnail {
     text-align: center;
 }
 
+.card-title h2{
+    font-size: small;
+}
+
 .btn {
     background: none;
     color: #fff;
@@ -265,12 +269,11 @@ section .thumbnail {
 }
 
 .card-slide h2 {
-    margin: 0;
-    font-size: small;
+    font-size: smaller;
 }
 
 .card-slide p {
-    font-size: smaller;
+    font-size: x-small;
     padding: 0.6rem 0;
 }
 
