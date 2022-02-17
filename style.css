@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-/* navbar for mobile */
-body .nav{
-    position: absolute;
+
+.mobile, .nav {
+    display: flex;
+    justify-content: center;
+
 }
-.nav{
-    position: relative;
-    top: 0;
-    width: 100%;
-}
+
 .nav-background{
     background-color: white;
     box-shadow: 0 10px 6px -6px #777;
@@ -21,7 +19,7 @@ body .nav{
     z-index: 1000;
 }
 
-.topnav {
+.topnav, .mobile {
     overflow: hidden;
     display: flex;
     text-align: center;
@@ -32,8 +30,72 @@ body .nav{
 }
 
 
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.mobile a {
+    color: #e99c2f;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.9rem 1rem;
+    display: block;
+}
+
+.topnav a {
+    color: #3b3e419f;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.9rem 1rem;
+    display: none;
+}
+
+.navbar-toggle{
+    justify-self: flex-end;
+    right: 15%;
+    border: none;
+    color: #fff;
+    background: #e99c2f;
+    width: 35px;
+    height: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: fixed;
+    right: 6%;
+}
+
+/* adding style for mobile nav to use on js */
+.mystyle{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+ 
+}
+
+.mobile {
+    margin: 0.7rem 0;
+    letter-spacing: 2px;
+    color: #e99c2f;
+    text-decoration: none;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 13%;
+    z-index: 9999;
+    background-color: rgba(247, 247, 247, 0.9);
+}
+
+
 .hero-section {
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: #1e1f209f;
 }
 
@@ -49,7 +111,6 @@ body .nav{
 .landing-content p{
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    padding: 1rem;
     font-size: 1rem;
     font-weight: bolder;
 }
@@ -142,57 +203,13 @@ img {
     }
 }
 
-/* Desktop view */
-@media (min-width: 40rem) {
-    /* navbar for Deskop */
 
-    .nav {
-        display: flex;
-        justify-content: center;
-    
-    }
-    
-    .nav-background{
-        background-color: white;
-        box-shadow: 0 10px 6px -6px #777;
-        width: 100%;
-        position: fixed;
-        z-index: 1000;
-    }
-    
-    .topnav {
-        overflow: hidden;
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 1rem;
-        
-    }
-    
-    
-    .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-    
-    .topnav a {
-        color: #3b3e419f;
-        text-decoration: none;
-        font-size: 1.25rem;
-        padding: 0.9rem 1rem;
-    }
-
+@media(min-width: 40rem) {
     .hero-section {
         margin-top: 8rem;
         color: #1e1f209f;
     }
-    
 
-}
-
-
-@media(min-width: 40rem) {
     .second-layer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -222,4 +239,23 @@ img {
         }
     }
 }
-/* end of Desktop view */
+
+/* desktop view */
+
+@media (min-width: 40rem) {
+    .topnav a {
+        color: #3b3e419f;
+        text-decoration: none;
+        font-size: 1.25rem;
+        padding: 0.9rem 1rem;
+        display: inline;
+    }
+
+    .navbar-toggle{
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

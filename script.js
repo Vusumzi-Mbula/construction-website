@@ -132,7 +132,10 @@ thumbnail[i].addEventListener('mouseout', function() {
 });
 }
 
- // toggle navbar when toggle button is clicked
- document.querySelectorAll('.navbar-toggler').addEventListener('click', () => {
-    document.querySelectorAll('.navbar-collapse').classList.toggle('.show-navbar');
-});
+// ===========================================================================================
+// toggle navbar when toggle button is clicked
+// ===========================================================================================
+function myFunction() {
+    var element = document.getElementById("myDIV");
+    element.classList.toggle("mystyle");
+  } 
