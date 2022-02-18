@@ -17,41 +17,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>New Look Construction</title>
 </head>
+
 <body>
     <div class="nav">
         <div class="nav-background">
-          <div class="topnav center-content">
-            <div class="logo">
-                <img src="logo.png" alt="logo" width="100%" height="100vh">
-            </div>
-            <button onclick="myFunction()" class="navbar-toggle">
+            <div class="topnav center-content">
+                <div class="logo">
+                    <img src="/construction website/images/logo.png" alt="logo" width="100%" height="100vh">
+                </div>
+                <button onclick="myFunction()" class="navbar-toggle">
               <i class = "fas fa-bars"></i>
             </button>
-            <div class="anchor">
-                <a class="active" href="/index.html">Home</a>
-                <a href="/about.html">Portfolio</a>
-                <a href="/contacts.html">Contact</a>
-            </div> 
-  
-          </div> 
-        </div>  
-      </div>
-      
-      <nav>
+                <div class="anchor">
+                    <a class="active" href="/index.html">Home</a>
+                    <a href="/about.html">Portfolio</a>
+                    <a href="/contacts.html">Contact</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav>
         <div class="mobile" id="myDIV">
-          <a class="active" href="/index.html">Home</a>
-          <a href="/about.html">Portfolio</a>
-          <a href="/contacts.html">Contact</a>
-      </div>
-      </nav>
-  
+            <a class="active" href="/index.html">Home</a>
+            <a href="/about.html">Portfolio</a>
+            <a href="/contacts.html">Contact</a>
+        </div>
+    </nav>
+
     <main>
         <div class="margi">
             <h1>Contact Us</h1>
         </div>
         <div class="contact-us__content">
             <h2>Drop us a line!</h2>
-            <p>Send us a message, or call us for a qoute. Use our contact form to tell us more about your  project,and we will connect you with the services to fit your needs.</p>
+            <p>Send us a message, or call us for a qoute. Use our contact form to tell us more about your project,and we will connect you with the services to fit your needs.</p>
             <h2>newlookconstruction</h2>
         </div>
     </main>
@@ -65,12 +66,12 @@
                 </div>
                 <div class="Phone">
                     <i class="fas foot-icons fa-phone fa-2x"></i>
-                    <h3>Phone us</h3> 
+                    <h3>Phone us</h3>
                     <p>082 081 1303</p>
                 </div>
                 <div class="Address">
                     <i class="fas foot-icons fa-address-card fa-2x"></i>
-                    <h3>Address</h3> 
+                    <h3>Address</h3>
                     <p>3770 FINETOWN GRASMERE</p>
                 </div>
                 <div class="lets">
@@ -79,11 +80,37 @@
                     </div>
                 </div>
                 <div class="copy">
-                <span>Copyright &copy; 2022 | Developed by <a href="">QodBrains</a></span>
+                    <span>Copyright &copy; 2022 | Developed by <a href="">QodBrains</a></span>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="main" onclick="Action()">
+        <div class="message-box" id="box">
+            <div class="newlook">
+                <p>New Look Construction</p>
+                <p class="cross" onclick="hide()">+</p>
+            </div>
+            <div class="greeting">
+                <p>Hi! Let us know how we can help and we’ll respond shortly.</p>
+            </div>
+            <div class="form">
+                <input type="text" class="text" placeholder="Name*" required><br>
+                <input type="text" class="text" placeholder="Email*" required><br>
+                <textarea name="" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
+            </div>
+            <div class="btnContainer">
+                <button type="button" class="btn">SEND</button>
+            </div>
+            <span>This site is protected by reCAPTCHA and the 
+                Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</span>
+        </div>
+        <div class="check-box" onclick="action()">
+            <i class="fa-solid fa-message"></i>
+        </div>
+
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
