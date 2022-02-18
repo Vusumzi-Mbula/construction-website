@@ -17,7 +17,8 @@
 .about-hero__section::before {
     position: absolute;
     content: '';
-    background: no-repeat 50% center / cover url(/construction\ website/images/pic3.jpg);
+
+    background: no-repeat 50% center / cover url(pic3.jpg);
     width: 100%;
     height: 60vh;
     z-index: -1;
