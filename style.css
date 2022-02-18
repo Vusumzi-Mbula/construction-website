@@ -145,22 +145,20 @@
     text-decoration: none;
     color: white;
     background-color: #f71143;
-    font-size: 1rem;
     padding: 1rem;
     border: none;
-    border-radius: 20px;
-    box-shadow: 0 10px 6px 1px #777;
+    font-size: 15px;
+    border-radius: 15px;
     cursor: pointer;
+    /* letter-spacing: 2px; */
 }
 
 .first-btn:hover,
 .first-btn:active {
-    background-color: #ffffff;
-    color: #f71143;
+    background-color: #ca0f37;
+    color: white;
     padding: 1rem;
     border: none;
-    border-radius: 20px;
-    box-shadow: 0 10px 6px 1px #777;
     cursor: pointer;
 }
 
