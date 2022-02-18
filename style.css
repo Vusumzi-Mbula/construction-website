@@ -26,9 +26,7 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 1rem;
-    
 }
-
 
 
 .topnav a:hover {
@@ -93,34 +91,32 @@
     background-color: rgba(247, 247, 247, 0.9);
 }
 
-
 .hero-section {
     margin-top: 2rem;
     color: #1e1f209f;
 }
 
 .landing-content {
-    align-self: center;
+    /* align-self: center; */
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
 }
 
-.landing-content p{
+.landing-content p {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     font-size: 1rem;
     font-weight: bolder;
 }
 
-.landing-content h1{
+.landing-content h1 {
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     margin-top: 8rem;
-    
 }
 
 .image-div {
@@ -131,7 +127,6 @@
 .image-div img {
     width: 70%;
 }
-
 
 .second-layer {
     display: grid;
@@ -146,30 +141,26 @@
     font-weight: bolder;
 }
 
-
 .first-btn {
     text-decoration: none;
     color: white;
     background-color: #f71143;
-    font-size: 1rem;
     padding: 1rem;
     border: none;
-    border-radius: 20px;
-    box-shadow: 0 10px 6px 1px #777;
+    font-size: 15px;
+    border-radius: 15px;
     cursor: pointer;
-    }
-    
-    .first-btn:hover,
-    .first-btn:active {
-    background-color: #ffffff;
-    color: #f71143;
+    /* letter-spacing: 2px; */
+}
+
+.first-btn:hover,
+.first-btn:active {
+    background-color: #ca0f37;
+    color: white;
     padding: 1rem;
     border: none;
-    border-radius: 20px;
-    box-shadow: 0 10px 6px 1px #777;
     cursor: pointer;
-    }
-    
+}
 
 .first-btn a {
     text-decoration: none;
@@ -209,6 +200,9 @@ img {
         margin-top: 8rem;
         color: #1e1f209f;
     }
+}
+
+@media(min-width: 40rem) {
 
     .second-layer {
         display: grid;
@@ -222,14 +216,11 @@ img {
         height: 50vh;
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    .landing-content h1{
+    .landing-content h1 {
         color: black;
         font-family: 'Poppins', sans-serif;
         font-size: 3rem;
-        
     }
-
     @keyframes vusi {
         0% {
             left: -10px;
@@ -259,3 +250,4 @@ img {
         display: none;
     }
 }
+

@@ -2,3 +2,148 @@
     margin: auto;
     width: 80%;
 }
+
+
+/* message box */
+
+.message-box {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 250, 250, 0.5);
+    visibility: hidden;
+}
+
+.newlook {
+    background-color: rgb(248, 207, 76);
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-radius: 25% 25% 0 0; */
+}
+
+.greeting {
+    position: relative;
+    top: -20px;
+    width: 250px;
+    margin: auto;
+    background-color: rgb(182, 161, 92);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.check-box {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.fa-message {
+    position: relative;
+    padding: 20px;
+    background-color: rgb(248, 207, 76);
+    color: black;
+    border-radius: 50%;
+    font-size: 2em;
+}
+
+.main.checked i {
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+
+#textarea {
+    margin-bottom: 10px;
+}
+
+.main {
+    position: fixed;
+    bottom: 10%;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.main .btn {
+    font-size: 15px;
+    width: 100px;
+    margin: auto;
+    background-color: rgb(248, 207, 76);
+    border: none;
+    color: black;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.btnContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text,
+textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+}
+
+.newlook .cross {
+    transform: rotate(45deg);
+    position: relative;
+    left: 280px;
+    bottom: 20px;
+    color: gray;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.cross:hover {
+    color: red;
+}
+
+.message-box a {
+    color: rgb(172, 148, 72);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.message-box span {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 458px) {
+    .main {
+        right: 1px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main {
+        bottom: 2px;
+    }
+}
+
+@media (max-height: 790px) {
+    .main {
+        bottom: 1px;
+    }
+    .text,
+    textarea {
+        padding: 0;
+    }
+}

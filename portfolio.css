@@ -17,7 +17,7 @@
 .about-hero__section::before {
     position: absolute;
     content: '';
-    background: no-repeat 50% center / cover url(/pic3.jpg);
+    background: no-repeat 50% center / cover url(/construction\ website/images/pic3.jpg);
     width: 100%;
     height: 60vh;
     z-index: -1;
@@ -231,6 +231,10 @@ section .thumbnail {
     text-align: center;
 }
 
+.card-title h2{
+    font-size: small;
+}
+
 .btn {
     background: none;
     color: #fff;
@@ -265,12 +269,11 @@ section .thumbnail {
 }
 
 .card-slide h2 {
-    margin: 0;
-    font-size: small;
+    font-size: smaller;
 }
 
 .card-slide p {
-    font-size: smaller;
+    font-size: x-small;
     padding: 0.6rem 0;
 }
 
