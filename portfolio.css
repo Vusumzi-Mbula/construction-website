@@ -427,6 +427,7 @@ section .thumbnail:hover {
 
 footer {
     margin-top: 20px;
+    background-color: #171e25;
 }
 
 .footer-container {
@@ -437,16 +438,24 @@ footer {
 
 .footer-container .list {
     margin: 20px;
+    color: #F7F7F7;
+    font-family: 'Lato', sans-serif;
 }
 
 footer .copy {
     text-align: center;
     margin-bottom: 20px;
+    color: #F7F7F7;
 }
 
+footer h2{
+    color: rgb(192, 192, 192);
+    font-family: 'Poppins', sans-serif;
+
+}
 .list a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1em;
 }
 
@@ -467,6 +476,7 @@ footer .copy {
 
 .our-products {
     width: 200px;
+    
 }
 
 
