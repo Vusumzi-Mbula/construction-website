@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(250, 250, 250, 0.5);
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
 }
 
 .newlook {
@@ -38,6 +39,7 @@
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .fa-message {
@@ -130,6 +132,9 @@ textarea {
     .main {
         right: 1px;
     }
+    .message-box {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
 }
 
 @media (max-width: 375px) {
@@ -144,6 +149,6 @@ textarea {
     }
     .text,
     textarea {
-        padding: 0;
+        padding: 12px;
     }
 }

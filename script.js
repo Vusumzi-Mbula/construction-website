@@ -139,11 +139,11 @@ function Action() {
 }
 
 function action(visible, hid) {
-    document.getElementById("box").style.visibility = "visible"
+    document.getElementById("box").style.display = "flex"
 }
 
 function hide() {
-    document.getElementById("box").style.visibility = "hidden"
+    document.getElementById("box").style.display = "none"
 }
 
 // ===========================================================================================
@@ -152,5 +152,4 @@ function hide() {
 function myFunction() {
     var element = document.getElementById("myDIV");
     element.classList.toggle("mystyle");
-  } 
-
+}
