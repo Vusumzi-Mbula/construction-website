@@ -428,6 +428,7 @@ section .thumbnail:hover {
 footer {
     margin-top: 20px;
     background-color: #171e25;
+    padding-bottom: 3rem;
 }
 
 .footer-container {
