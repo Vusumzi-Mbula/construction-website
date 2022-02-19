@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-
-.mobile, .nav {
+.mobile,
+.nav {
     display: flex;
     justify-content: center;
-
 }
 
-.nav-background{
+.nav-background {
     background-color: white;
     box-shadow: 0 10px 6px -6px #777;
     width: 100%;
@@ -19,7 +18,8 @@
     z-index: 1000;
 }
 
-.topnav, .mobile {
+.topnav,
+.mobile {
     overflow: hidden;
     display: flex;
     text-align: center;
@@ -28,12 +28,10 @@
     padding-right: 1rem;
 }
 
-
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
-
 
 .mobile a {
     color: #e99c2f;
@@ -51,9 +49,7 @@
     display: none;
 }
 
-.navbar-toggle{
-    justify-self: flex-end;
-    right: 15%;
+.navbar-toggle {
     border: none;
     color: #fff;
     background: #e99c2f;
@@ -65,20 +61,10 @@
     right: 6%;
 }
 
-/* adding style for mobile nav to use on js */
-.mystyle{
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
- 
-}
 
-.mobile {
+/* adding style for mobile nav to use on js */
+
+.mystyle {
     margin: 0.7rem 0;
     letter-spacing: 2px;
     color: #e99c2f;
@@ -87,8 +73,12 @@
     position: fixed;
     width: 100%;
     top: 13%;
-    z-index: 9999;
+    z-index: 600;
     background-color: rgba(247, 247, 247, 0.9);
+}
+
+.mobile {
+    position: fixed;
 }
 
 .hero-section {
@@ -194,7 +184,6 @@ img {
     }
 }
 
-
 @media(min-width: 40rem) {
     .hero-section {
         margin-top: 8rem;
@@ -203,7 +192,6 @@ img {
 }
 
 @media(min-width: 40rem) {
-
     .second-layer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -231,6 +219,7 @@ img {
     }
 }
 
+
 /* desktop view */
 
 @media (min-width: 40rem) {
@@ -241,13 +230,10 @@ img {
         padding: 0.9rem 1rem;
         display: inline;
     }
-
-    .navbar-toggle{
+    .navbar-toggle {
         display: none;
     }
-
     .mobile {
         display: none;
     }
 }
-
