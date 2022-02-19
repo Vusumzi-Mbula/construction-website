@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: script.js
+Disallow: /certificates/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /certificates/
