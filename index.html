@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="style.css">
-
+    <script src="./smtp.js"></script>
     <title>New Look Construction | South Africa's Next Biggest General Building Contractor</title>
 </head>
 
@@ -84,12 +84,12 @@
                 <p>Hi! Let us know how we can help and we'll respond shortly.</p>
             </div>
             <div class="form">
-                <input type="text" class="text" placeholder="Name*" required><br>
-                <input type="text" class="text" placeholder="Email*" inputmode="email" required><br>
-                <textarea name="" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
+                <input type="text" class="text text-name" placeholder="Name*" required><br>
+                <input type="text" class="text text-email" placeholder="Email*" inputmode="email" required><br>
+                <textarea name=""  class="text text-message-body" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
             </div>
             <div class="btnContainer">
-                <button type="button" class="btn">SEND</button>
+                <button type="button" class="btn btn-send-mail">SEND</button>
             </div>
             <span>This site is protected by reCAPTCHA and the 
                 Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</span>
@@ -99,6 +99,31 @@
         </div>
 
     </div>
+    <script>
+        const senderName = document.querySelector(".text-name");
+        const senderEmail = document.querySelector(".text-email");
+        const senderMessage = document.querySelector(".text-message-body");
+        const sendButton = document.querySelector(".btn-send-mail");
+
+        const sendMail = () => {
+            Email.send({
+                SecureToken: "b415045f-d6cf-46df-b791-887473c84600",
+                To : 'zdmkhwanazi@gmai.com',
+                From : senderEmail.value,
+                Subject : "Message From Website",
+                Body : senderName.value + "\n" +senderMessage.value
+            }).then(
+              message => alert("message")
+            ).catch(err => {
+                console.log("Error: ", err);
+            });
+        }
+
+        sendButton.addEventListener('click', () => {
+            sendMail();
+        })
+
+    </script>
     <script src="script.js"></script>
     <noscript>Sorry! But unfortunately your browser either does not support, or has disabled JavaScript functions!</noscript>
 </body>
