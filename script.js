@@ -134,16 +134,8 @@ for (var i = 0; i < thumbnail.length; i++) {
 // toggle message box
 
 function Action() {
-    var action = document.querySelector(".main");
+    var action = document.getElementById("box");
     action.classList.toggle("checked");
-}
-
-function action(visible, hid) {
-    document.getElementById("box").style.display = "flex"
-}
-
-function hide() {
-    document.getElementById("box").style.display = "none"
 }
 
 // ===========================================================================================
