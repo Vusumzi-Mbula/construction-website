@@ -122,7 +122,6 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    /* height: 50vh; */
     color: #1e1f209f;
 }
 
@@ -140,7 +139,6 @@
     font-size: 15px;
     border-radius: 15px;
     cursor: pointer;
-    /* letter-spacing: 2px; */
 }
 
 .first-btn:hover,
@@ -166,7 +164,6 @@ img {
 }
 
 .animation {
-    left: 0;
     position: relative;
     animation: vusi;
     animation-duration: 5s;
@@ -177,12 +174,21 @@ img {
 
 @keyframes vusi {
     0% {
+        opacity: 0;
         left: -200%;
     }
+
+    37% {
+        opacity: 0;
+    }
+
+
     100% {
         left: 0%;
     }
 }
+
+
 
 @media(min-width: 40rem) {
     .hero-section {
@@ -190,6 +196,8 @@ img {
         color: #1e1f209f;
     }
 }
+
+
 
 @media(min-width: 40rem) {
     .second-layer {
@@ -231,6 +239,49 @@ img {
 }
 
 
+/* QUERIES FOR IPAD */
+@media(min-width:50.625rem) and (max-width:50.625rem) {
+    .second-layer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        color: #1e1f209f;
+    }
+    .landing-content {
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .landing-content h1 {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+    }
+
+    .image-div {
+        margin-top: 8rem;
+        align-self: center;
+    }
+    
+    .image-div img {
+        width: 60%;
+    }
+
+
+
+    @keyframes vusi {
+        0% {
+            opacity: 0;
+            left: -200%;
+        }
+        100% {
+            left: 0%;
+        }
+    }
+
+
+}
+
+
 /* desktop view */
 
 @media (min-width: 40rem) {
@@ -248,3 +299,6 @@ img {
         display: none;
     }
 }
+
+
+
