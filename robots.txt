@@ -1,5 +1,8 @@
 User-agent: *
-Disallow: 
-Disallow: /script.js
+Allow: /
+Disallow: script.js
 Disallow: /certificates/
-Sitemap: http://www.newlookconstruction.co.za/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /certificates/
