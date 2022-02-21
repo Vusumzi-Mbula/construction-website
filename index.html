@@ -86,7 +86,7 @@
             <div class="form">
                 <input type="text" class="text text-name" placeholder="Name*" required><br>
                 <input type="text" class="text text-email" placeholder="Email*" inputmode="email" required><br>
-                <textarea name=""  class="text text-message-body" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
+                <textarea name="" class="text text-message-body" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
             </div>
             <div class="btnContainer">
                 <button type="button" class="btn btn-send-mail">SEND</button>
@@ -108,12 +108,12 @@
         const sendMail = () => {
             Email.send({
                 SecureToken: "b415045f-d6cf-46df-b791-887473c84600",
-                To : 'zdmkhwanazi@gmai.com',
-                From : senderEmail.value,
-                Subject : "Message From Website",
-                Body : senderName.value + "\n" +senderMessage.value
+                To: 'zdmkhwanazi@gmai.com',
+                From: senderEmail.value,
+                Subject: "Message From Website",
+                Body: senderName.value + "\n" + senderMessage.value
             }).then(
-              message => alert("message")
+                message => alert("message")
             ).catch(err => {
                 console.log("Error: ", err);
             });
@@ -122,7 +122,6 @@
         sendButton.addEventListener('click', () => {
             sendMail();
         })
-
     </script>
     <script src="script.js"></script>
     <noscript>Sorry! But unfortunately your browser either does not support, or has disabled JavaScript functions!</noscript>
