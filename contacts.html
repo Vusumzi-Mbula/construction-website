@@ -92,7 +92,7 @@
             </div>
         </div>
     </footer>
-    <div class="main" onclick="Action()">
+    <div class="main">
         <div class="message-box" id="box">
             <div class="newlook">
                 <p>New Look Construction</p>
@@ -101,17 +101,17 @@
                 <p>Hi! Let us know how we can help and we'll respond shortly.</p>
             </div>
             <div class="form">
-                <input type="text" class="text" placeholder="Name*" required><br>
-                <input type="text" class="text" placeholder="Email*" required><br>
-                <textarea name="text" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
+                <input type="text" class="text text-name" placeholder="Name*" required><br>
+                <input type="text" class="text text-email" placeholder="Email*" inputmode="email" required><br>
+                <textarea name="" class="text text-message-body" id="textarea" placeholder="How can we help?*" cols="20" rows="5" required></textarea>
             </div>
             <div class="btnContainer">
-                <button type="button" class="btn">SEND</button>
+                <button type="button" class="btn btn-send-mail">SEND</button>
             </div>
             <span>This site is protected by reCAPTCHA and the 
                 Google <a href="">Privacy Policy</a> and <a href="">Terms of Service</a> apply.</span>
         </div>
-        <div class="check-box" onclick="action()">
+        <div class="check-box" onclick="Action()">
             <i class="fa-solid fa-message"></i>
         </div>
 
