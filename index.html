@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="style.css">
-    <script src="./smtp.js"></script>
+    <script src="smtp.js"></script>
     <title>New Look Construction | South Africa's Next Biggest General Building Contractor</title>
 </head>
 
@@ -31,7 +31,7 @@
             <div class="topnav center-content">
                 <div class="logo">
 
-                    <img src="construction-website/images/logo.png" alt="logo" width="100" height="100">
+                    <img src="construction-website/images/logo.png" alt="logo" width="100%" height="100vh">
 
                 </div>
                 <button onclick="myFunction()" class="navbar-toggle">
@@ -108,13 +108,14 @@
         const sendMail = () => {
             Email.send({
                 SecureToken: "b415045f-d6cf-46df-b791-887473c84600",
-                To: 'zdmkhwanazi@gmai.com',
-                From: senderEmail.value,
-                Subject: "Message From Website",
-                Body: senderName.value + "\n" + senderMessage.value
-            }).then(
-                message => alert("message")
-            ).catch(err => {
+                To : 'vusimbula65@gmail.com',
+                From : senderEmail.value,
+                Subject : "Message From Website",
+                Body : senderName.value + "\n" +senderMessage.value
+            }).then(message => {
+                return message;
+            })
+              .catch(err => {
                 console.log("Error: ", err);
             });
         }
