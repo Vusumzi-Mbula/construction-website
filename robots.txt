@@ -2,4 +2,4 @@ User-agent: *
 Disallow: 
 Disallow: /script.js
 Disallow: /certificates/
-Sitemap: http://www.newlookconstruction.co.za/
+Sitemap: http://newlookconstruction.co.za/

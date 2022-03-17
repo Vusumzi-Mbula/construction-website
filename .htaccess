@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^newlookconstruction.com [NC,OR]
+
+RewriteCond %{HTTP_HOST} ^www.newlookconstruction.com [NC]
+
+RewriteRule ^(.*)$ http://newlookconstruction.co.za/$1 [L,R=301,NC]
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www.newlookconstruction.co.za [NC]
+
+RewriteRule ^(.*)$ http://newlookconstruction.co.za/$1 [L,R=301,NC]
