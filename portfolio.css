@@ -479,6 +479,10 @@ footer h2 {
     width: 200px;
 }
 
+.copy a {
+    color: white;
+}
+
 
 /* footer social */
 

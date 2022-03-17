@@ -1,7 +1,5 @@
-
 .margi {
     margin-top: 14rem;
-
 }
 
 .margi h1 {
@@ -9,10 +7,7 @@
     color: #f71143;
     text-align: center;
     font-weight: 800;
-
 }
-
-
 
 .contact-us__content {
     margin-top: 6rem;
@@ -22,9 +17,7 @@
     flex-direction: column;
     text-align: center;
     height: 50vh;
-
 }
-
 
 .contact-us__content h2 {
     padding-bottom: 2rem;
@@ -51,7 +44,6 @@
 .grid-container h3 {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: .5rem;
-    
 }
 
 .grid-container p {
@@ -66,48 +58,46 @@
     text-align: center;
 }
 
-
 .grid-container i {
     text-align: center;
     padding: .8rem 0;
 }
 
-
-
 .grid-container :nth-child(1),
 .grid-container :nth-child(2),
-.grid-container :nth-child(3)
-{
+.grid-container :nth-child(3) {
     align-self: center;
     width: 100%;
     text-align: center;
-
 }
+
+.email a {
+    color: white;
+}
+
 
 /* DESKTOP VIEW */
+
 @media(min-width: 40rem) {
-    
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
-    color: #F7F7F7;
-}
-
-.copy {
-    grid-column: span 3;
-    align-self: flex-end;
-}
-
-.lets {
-    grid-column: span 3;
-    font-size: 3rem;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    background-color: rgba(247, 17, 67, 0.5);
-    text-align: center;
-    align-self: center;
-}
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        color: #F7F7F7;
+    }
+    .copy {
+        grid-column: span 3;
+        align-self: flex-end;
+    }
+    .lets {
+        grid-column: span 3;
+        font-size: 3rem;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        background-color: rgba(247, 17, 67, 0.5);
+        text-align: center;
+        align-self: center;
+    }
 }
